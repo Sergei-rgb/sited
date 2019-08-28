@@ -7,7 +7,6 @@
     "dev": "webpack-dev-server --mode development --open",
     "mg": "webpack --mode production"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "path": "^0.12.7",
