@@ -1,5 +1,5 @@
-let path =require('path');
-
+let path =require('path')
+let HtmlWebpackPlugin = require('html-webpack-plugin')
 let cof = {
 	entry: './src/index.js',
 	output: {
@@ -9,7 +9,12 @@ let cof = {
 	},
 	devServer:{
 		overlay: true
-	}
+	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: './src/Header.html'
+		})
+	]
 };
 
 module.exports = cof;
